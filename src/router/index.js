@@ -6,6 +6,7 @@ import Menu from '../components/menu';
 import Footer from '../components/footer';
 import NavBar from '../components/navbar';
 import ContactUs from '../components/contact-us';
+import About from '../components/about';
 
 const AppRouter = () => {
     return (
@@ -15,6 +16,7 @@ const AppRouter = () => {
                 <Route path="/" component={Home} exact />
                 <Route path="/menu" component={Menu} />
                 <Route path="/contact" component={ContactUs} />
+                <Route path="/about" component={About} />
             </Switch>
             <Footer />
         </main>

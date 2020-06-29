@@ -412,6 +412,7 @@ list-style: none;
   margin-top: 30px;
 }
 
+
 #myFooter .logo{
   margin-top: 10px;
 }
@@ -476,6 +477,21 @@ color: rgb(128,128,128)
   .banner-text {
     font-size: unset;
   }
+  .margened-top-text{
+   padding-top: 100px;
+    
+  }
+
+  .blog {
+    position: relative;
+    width: 11em;
+    height: 17em;
+    background-size: 11em 17em;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    overflow: hidden;
+  }
+
 }
 
 
@@ -519,7 +535,7 @@ color: rgb(128,128,128)
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
 }
-.contact-us{
+.margened-top-text{
   text-align: center;
   margin:10% auto;
 }
@@ -535,4 +551,103 @@ color: rgb(128,128,128)
   padding:30px;
   border: 1px solid rgb(128,128,128);
   width: 60%
+}
+
+
+
+
+
+
+
+.blog {
+  position: relative;
+  width: 22em;
+  height: 30em;
+  background: url("/asaied.jpg") no-repeat;
+  background-size: 22em 30em;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  overflow: hidden;
+}
+.blog *, .nicolineBlog *  {
+  position: relative;
+  z-index: 2;
+}
+.blog:hover .color-overlay, .nicolineBlog:hover .color-overlay  {
+  background: rgba(74, 100, 114, 0.8);
+}
+.blog:hover .info, .nicolineBlog:hover .info  {
+  bottom: -3em;
+  opacity: 1;
+}
+.blog, .nicolineBlog,
+.color-overlay {
+  border-radius: 0.7em;
+}
+.color-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.7s background;
+  background: rgba(74, 100, 114, 0.3);
+  z-index: 1;
+}
+
+.nicolineBlog{
+  position: relative;
+  width: 22em;
+  height: 30em;
+  background: url("/images/Nicoline.jpg") no-repeat;
+  background-size: 22em 30em;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  overflow: hidden;
+}
+
+.title-box {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+h3 {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.4em;
+
+  text-align: center;
+}
+.intro {
+  width: 170px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Droid Serif", serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+.info {
+  font-family: "Droid Serif", serif;
+  font-size: 1.2em;
+  color: #ddd;
+  line-height: 1.1em;
+  padding: 0 2em;
+
+  position: relative;
+  bottom: -4em;
+  opacity: 0;
+  background: transparent;
+  transition: opacity 0.3s, bottom 0.3s;
+  text-align: center;
+}
+.space {
+  display: inline-block;
+  width: 0.6em;
+  height: 1em;
 }

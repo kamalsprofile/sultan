@@ -28,6 +28,7 @@ const Footer = () => {
                             </div>
                             <div class="col-sm-4" style={{ textAlign: "center" }}>
                                 <h5>Find Us</h5>
+                                <p> Nørrebrogade 72, 2200 Copenhagen </p>
                                 <ul>
                                     <li className="map-container">
 

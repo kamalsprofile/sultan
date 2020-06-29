@@ -14,7 +14,7 @@ class ContactUs extends React.Component {
         return (
 
             <div className="container">
-                <div className="contact-us">
+                <div className="margened-top-text">
                     <div className="fast-contact" style={{ marginBottom: "40px" }}>
                         <h2>Quick contact</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam optio asperiores vel ratione,
